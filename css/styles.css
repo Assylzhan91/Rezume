@@ -42,6 +42,9 @@ readers do not read off random characters that represent icons */
 .fa-sort-up:before {
   content: "\f0de";
 }
+.fa-stack-overflow:before {
+  content: "\f16c";
+}
 .fa-tools:before {
   content: "\f7d9";
 }
@@ -110,11 +113,11 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font: normal 20px Roboto;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Roboto', sans-serif;
   background-color: #fff;
   min-width: 1260px;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
 }
 .header {
   background-image: url("../img/header-bg.png");
@@ -124,7 +127,6 @@ body {
   justify-content: center;
   position: relative;
   flex-wrap: nowrap;
-  padding: 10px 0;
 }
 .header_mod {
   padding-top: 100px;
@@ -155,20 +157,16 @@ body {
 .header__block {
   color: #626676;
   position: relative;
+  margin: 8px 0;
 }
 .header__block i {
   color: #000;
   font-size: 20px;
 }
-.header__wrap-btn:hover {
-  cursor: pointer;
-}
-.header__wrap-btn:hover span {
-  color: #000;
-}
 .header__text {
   font-size: 18px;
   margin-left: 5px;
+  color: #626676;
 }
 .header__text_2 {
   padding-right: 20px;
@@ -181,6 +179,14 @@ body {
   font-size: 18px;
   line-height: 18px;
   height: 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.header__wrap-link:hover {
+  cursor: pointer;
+}
+.header__wrap-link:hover .header__text {
+  color: #000;
 }
 .portfolio {
   display: none;
