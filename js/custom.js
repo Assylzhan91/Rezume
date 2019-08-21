@@ -14,18 +14,24 @@ window.addEventListener('load', function () {
     }
 
 
-    let headerWrapBtn = $('.header__wrap-btn');
+    let headerWrapBtn = $('#dropdown');
+
+
     let portfolio = $('.portfolio');
     let faSortUp = $('.fa-sort-up');
+    let someDiv = document.querySelectorAll('.someDiv');
 
-    headerWrapBtn.on('click',  function () {
+    headerWrapBtn.on('click', function () {
         portfolio.fadeIn();
-        faSortUp.addClass('fa-rotate-180');
+        faSortUp.attr('style', 'transform: rotate(180deg)')
     });
+
+
+
 
     portfolio.on('mouseleave', function () {
         portfolio.fadeOut();
-        faSortUp.removeClass('fa-rotate-180');
+        faSortUp.removeAttr('style');
     })
 
 

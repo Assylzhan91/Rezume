@@ -9,9 +9,11 @@
   <title>Rezume</title>
   <link rel="shortcut icon" type="image/png" href="img/icon.png">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
+<div class="someDiv" data-attr = "1212"></div>
+<div class="someDiv"></div>
   <header class="header header_mod">
     <div class="header__wrap">
       <div class="container container_flex header__center">
@@ -43,10 +45,10 @@
             <span class="header__text">asylzhan.baimuratov@gmail.com</span>
           </div>
           <div class="header__block">
-            <p class="header__wrap-btn">
+            <a id="dropdown" class="header__wrap-link">
               <i class="fab fa-github"></i>
               <span class="header__text header__text_2">Portfolio <i class="fas fa-sort-up "></i></span>
-            </p>
+            </a>
 
           <ul class="portfolio portfolio_mod">
               <li>
@@ -71,6 +73,12 @@
                 <a target="_blank" href="http://homecomfort.kz">Homecomfort</a>
               </li>
             </ul>
+          </div>
+         <div class="header__block">
+            <a target="_blank" href="https://ru.stackoverflow.com/users/325045/john" class="header__wrap-link">
+              <i class="fab fa-stack-overflow"></i>
+              <span class="header__text">stackoverflow</span>
+            </a>
           </div>
         </div>
 
@@ -207,7 +215,7 @@
     <div class="footer__col">
       <div class="footer__heading">
         <h3>Дополнительная информация</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis expedita officiis possimus sapiente tenetur! In, optio, soluta. Aut beatae dolor exercitationem, facere, harum illo illum incidunt itaque, iusto laborum maiores maxime modi molestias nihil optio perspiciatis provident reiciendis tempore velit!</p>
+        <p>Я готов проявить инициативу в работе, чтобы   качественно выполнять свои обязанности. На данный момент совершенствую навыки в области: Javascript(ES6, React, Webpack), Adobe Illustrator, PHP, MySQL и Git. Огромное  желание  развиваться, обучаться.</p>
       </div>
     </div>
 
